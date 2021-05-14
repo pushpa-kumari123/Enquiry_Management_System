@@ -1,0 +1,17 @@
+from tkinter import *
+my_window=Tk()
+my_window.title("my first project")
+my_window.geometry("500x400")
+L1=Label(my_window,text="Student Login Form",bg="#ffff00",fg="blue",font=("Algerian",20))
+L1.pack(fill=X)
+L2=Label(my_window,text="Registration no.",bg="pink",fg="black",font=(20),width=15)
+L2.place(y=50)
+E1=Entry(my_window,width=30)
+E1.place(x=300,y=50)
+L3=Label(my_window,text="Password",bg="pink",fg="blue",font=(20),width=15)
+L3.place(y=100)
+E2=Entry(my_window,width=30)
+E2.place(x=300,y=100)
+B1=Button(my_window,text="Submit",font=("Arial black",15),bg="green",fg="black")
+B1.place(x=300,y=200)
+my_window.mainloop();

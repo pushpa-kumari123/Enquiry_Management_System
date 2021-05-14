@@ -1,0 +1,25 @@
+from tkinter import *
+my_window=Tk()
+my_window.title("our final project/search")
+my_window.geometry("1366x768")
+my_window.configure(bg="grey")
+L1=Label(my_window,text="ENQUIRY MANAGEMENT SYSTEM",bg="lavender",fg="blue",font=("Algerian",40))
+L1.pack(fill=X)
+L6=Label(my_window,text="Search by :",bg="pink",fg="blue",font=(30),width="20")
+L6.place(x=100,y=150)
+CB=ttk.Combobox(my_window,value=("course","dob","email","city"),width="40")
+CB.place(x=300,y=150)
+s1=StringVar()
+def Backpage():
+    my_window.destroy()
+    import Login_page
+B1=Button(my_window,text="Back page",font=("Arial black",15),bg="lightgreen",fg="black",bd=5,command=Backpage,activebackground="grey",activeforeground="blue")
+B1.place(x=400,y=550)
+
+F1 = Frame(my_window, height=60, width=1366, bg="#ffff00")
+F1.place(x=0, y=620)
+L7 = Label(F1, text="Designed & Developed by  : ", fg="red", bg="#ffff00", font=("cambria", 20), width="30")
+L7.place(x=600, y=20)
+L8 = Label(F1, text="Pushpa Kumari", bg="#ffff00", fg="black", font=("arial black", 13), width="20")
+L8.place(x=1000, y=30)
+my_window.mainloop()

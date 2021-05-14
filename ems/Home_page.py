@@ -1,0 +1,21 @@
+from tkinter import *
+my_window=Tk()
+my_window.title("Home page")
+my_window.geometry("1366x768")
+L1=Label(my_window,text="ENQUIRY MANAGEMENT SYSTEM",bg="lavender",fg="blue",font=("Algerian",40))
+L1.pack(fill=X)
+L7=Label(my_window,text="Introduction",fg="black",bg="orange",font=("arial black",20),width="20")
+L7.place(x=10,y=80)
+
+L8=Label(my_window,text="NIELIT Centre , Patna was established in the year 2008 and is operational from 11th floor , Biscomaun Tower, Gandhi Maidan, "
+                        ,fg="black",font=100)
+L8.place(x=10,y=130)
+L9=Label(my_window,text="Patna with an objective to co-ordinate the activities of the various NIELIT Centres in the Eastern Region ",fg="black",font=100)
+L9.place(x=10,y=180)
+F1 = Frame(my_window, height=60, width=1366, bg="#ffff00")
+F1.place(x=0, y=620)
+L7 = Label(F1, text="Designed & Developed by  : ", fg="red", bg="#ffff00", font=("cambria", 20), width="30")
+L7.place(x=600, y=20)
+L8 = Label(F1, text="Pushpa Kushwaha", bg="#ffff00", fg="black", font=("arial black", 13), width="20")
+L8.place(x=1000, y=30)
+my_window.mainloop()
